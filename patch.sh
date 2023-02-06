@@ -6,7 +6,7 @@ set -x
 chmod 777 /tmp/mkmoonworld-x86_64
 zerotier-idtool initmoon /var/lib/zerotier-one/identity.public > moon.json
 chmod 777 moon.json
-moonip="[\"${MYADDR}/9993\"]"
+moonip="[\"${MYADDR}/3479\"]"
 sed -i "s#127.0.0.1#${MYADDR}#g" moon.json
 sed -i "s#\[\]#${moonip}#g" moon.json
 cat moon.json
